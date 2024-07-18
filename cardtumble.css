@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    color: white;
+    background-color: var(--bg-main);
+}
+
+:root
+{
+    --font-main:'Noto Sans', 'sans-serif';
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username:  #b7bbc8;
+}
+
+p, h3
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul 
+{
+    padding-left: 0;
+}
+
+ul li
+{
+    list-style: none;
+}
+
+.card
+{
+    max-width: 300px;
+    background-color: var(--bg-card);
+    margin: 20px auto;
+    padding: 1em;
+}
+
+.card, img
+{
+    border-radius: 10px;
+}
+
+.card-thumbnail img
+{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card-body
+{
+    display: flex;
+}
+
+.card-avatar img
+{
+    height: 50px;
+    max-width: 50px;
+    margin-right: 1em;
+}
+
+.card-details
+{
+    line-height: 1.4em;
+}
+
+.card-details h3
+{
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.card-body p
+{
+    font-size: .85rem;
+    color: var(--username);
+}
+
+.card-stats
+{
+    display: none;
+    padding-bottom: 0.5rem;
+}
+
+.card-stats li
+{
+    background-color: var(--bg-stats);
+    margin-right: 0.5rem;
+    padding: 0.25rem .5rem;
+    border-radius: 5px;
+}
+
+.card:hover .card-stats
+{
+    display: flex;
+}
+
+.card:hover
+{
+    padding-bottom: 0;
+}
