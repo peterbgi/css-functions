@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    background-color: var(--body-bgc);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root
+{
+    --body-bgc: #1e1f25;
+    --btn-bgc: #000;
+    --btn-color-hover: #fff;
+    --btn-color: #cbcbcb;
+    --grad-color1: #eeaf61;
+    --grad-color2: #fb9062;
+    --grad-color3: #ee5d6c;
+    --grad-color4: #ce4993;
+    --grad-color5: #6a0d83;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+ .button-border
+{
+    background: linear-gradient(115deg, #eeef61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    padding: 2px;
+} 
+ 
+.button
+{
+    background-color: var(--btn-bgc);
+    color: var(--btn-color);
+    padding: 1em 1.5em;
+    letter-spacing: .1em;
+    border: none;
+   /*  border-image:linear-gradient(115deg, #eeef61, #fb9062, #ee5d6c, #ce4993, #6a0d83);
+    border-image-slice: 1; */
+}
+
+.button-border:hover
+{
+ background: linear-gradient(230deg, #eeef61, #fb9062, #ee5d6c, #ce4993, #6a0d83);;
+}
+
+.button-border:hover button
+{
+    color: var(--btn-color-hover);
+    padding: 1.1em 1.6em;
+}
