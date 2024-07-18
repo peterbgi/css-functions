@@ -49,5 +49,12 @@
 
 .searchbar::placeholder
 {
-    font-weight: 200;
+    font-weight: 100;
+    padding: 10px;
+   
+}
+
+.search-bar:focus::placeholder
+{
+    color: transparent;
 }
