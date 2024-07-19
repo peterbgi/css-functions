@@ -1,0 +1,61 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body
+{
+    background-color: #523f3f;
+}
+
+:root
+{
+    --bg-animation: #5234ff;
+}
+
+.container
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h1::after
+{
+    content: "";
+    animation: 9s swap infinite;
+}
+
+@keyframes swap
+{
+    0%
+    {
+        content: " Szia ember";
+        background-color: var(--bg-animation);
+    }
+
+    25%
+    {
+        content: " Minden mindíg változik";
+        
+    }
+
+    50%
+    {
+        content: " Igen ez a lényeg";
+    }
+
+    75%
+    {
+        content: " !!";
+    }
+
+    100%
+    {
+        content: " megyek már";
+    }
+}
